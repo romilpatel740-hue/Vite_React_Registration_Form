@@ -1,20 +1,34 @@
-# React + Vite
+# React Form Validation (Assignment 4)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive React application featuring a user registration form with real-time field validation, password strength criteria checking, dynamic feedback, and clean UI components.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Real-Time Input Validation:**
+  - **Full Name:** Restricts numbers and special characters.
+  - **Email Address:** Validates proper email formatting.
+  - **Phone Number:** Validates valid phone number entry.
+  - **Password:** Live criteria checking (character length, uppercase, lowercase, numbers, and special characters).
+  - **Confirm Password:** Live matching against password entry.
+- **Toggle Password Visibility:** Show/hide password text using eye icon toggles.
+- **Form Controls:** Terms of Service checkbox verification and a dynamic Form Reset button.
+- **Dashboard Layout:** Sidebar navigation, top header bar, storage usage indicator, and footer links.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+- **Frontend:** React (Vite / CRA)
+- **Styling:** CSS3 / Tailwind CSS (or standard CSS modules)
+- **Icons:** Lucide React / FontAwesome (or native HTML icons)
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+## 📁 Project Structure
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-
+```text
+src/
+├── components/
+│   ├── Sidebar.jsx
+│   ├── Header.jsx
+│   ├── RegistrationForm.jsx
+│   └── Footer.jsx
+├── App.jsx
+├── index.css
+└── main.jsx
