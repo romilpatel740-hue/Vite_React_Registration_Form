@@ -1,4 +1,4 @@
-# React Form Validation (Assignment 4)
+# React Form Validation
 
 A responsive React application featuring a user registration form with real-time field validation, password strength criteria checking, dynamic feedback, and clean UI components.
 
